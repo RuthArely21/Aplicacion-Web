@@ -1,0 +1,55 @@
+<?php  
+
+$conexion = mysqli_connect('localhost','root',' ','lucelindaa9')or die(mysql_error$mysqli));
+
+diferencia($conexion);
+
+function diferencias ($conexion){
+	if (isset($_POST["enviar"])){
+		INSERT($conexion);
+	}
+ if (isset($_POST["enviar"])){
+		function_eliminar($conexion);
+ }
+
+}
+
+INSERT ($conexion);
+
+function_insertar($conexion){
+$nombre = $_POST['Nombre_Completo'];
+$correo = $_POST['correo'];
+$telefono = $_POST['telefono'];
+$mensaje = $_POST['mensaje'];
+
+$consulta = "INSERT INTO persona(nombre,apellidos)
+VALUES ('$nombre','$apellidos')"; 
+mysqli_query ('$conexion','$consulta)
+mysqli_query ('$conexion','$consulta');
+mysqli_close ('$conexion');
+
+
+function_eliminar($conexion){
+ $cedula = $_POST ["cedula "]; 
+
+ $consulta = "delete FROM formulario cedula =' $cedula '"; 
+ mysqli_query ($conexion, $consulta); 
+ mysqli_close ($conexion);
+
+}
+
+function cargartabla($conexion){ 
+	$consulta ="SELECT * FROM formulario";
+	$resultado = mysqli_query($conexion,$consulta); 
+
+	while($sfila =mysqli_fetc_array($resultado)){ 
+      echo "<tr>";
+      echo "<tr>";$fila["nombre"] 
+      echo "<tr>";$fila["apelidos"] 
+
+    }
+
+    mysqli_close ('$conexion');
+}  
+
+?>
