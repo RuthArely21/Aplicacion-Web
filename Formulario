@@ -1,0 +1,23 @@
+<h2>Envia un mensaje</h2>
+            <form>
+            <div class="user_info">
+                <label for="names">Nombres_Completo*</label>
+                <input type="text" id="names" name="nombre" required>
+
+                <label for="phone">Telefono / Celular</label>
+                <input type="text" id="phone" name="telefono">
+
+                <label for="email">Correo electronico *</label>
+                <input type="text" id="email" name="correo" required>
+
+                <label for="mensaje">Mensaje *</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+
+                <input type="submit" value="Enviar Mensaje" id="btnSend">
+            </div>
+        </form>
+        <a href="index.html"class="boton">Inicio</a>
+
+    </section>
+
+</html>
